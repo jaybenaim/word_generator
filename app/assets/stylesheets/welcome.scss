@@ -5,3 +5,31 @@
 body {
   text-align: center;
 }
+
+table {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-button {
+  height: 40px;
+  width: 80px;
+  border: 1px outset gray;
+  border-radius: 7px;
+  background: rgb(20.9%, 52%, 99.5%);
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  padding-top: 14px;
+  margin-top: 40px;
+}
+
+.home-button a {
+  color: white;
+  text-decoration: none;
+}
+
+#text {
+  display: none;
+}

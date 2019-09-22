@@ -1,0 +1,14 @@
+<main>
+  <p>
+    <strong> Category</strong>
+    <%= @word.category %>
+  </p>
+
+  <p>
+    <strong> Word</strong>
+    <%= @word.word %>
+  </p>
+  <%= link_to 'Edit', edit_word_path(@word) %> | <%= link_to 'Delete',
+  word_path(@word), method: :delete, data: {confirm: 'Are you sure?' } %> <%=
+  link_to 'Back', words_path %> <%= link_to 'Home', controller: 'welcome' %>
+</main>

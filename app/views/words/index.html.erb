@@ -1,0 +1,26 @@
+<main>
+  <table>
+    <tr>
+      <th colspan="1"></th>
+      <th>
+        Category |
+      </th>
+      <th>
+        Original Word |
+      </th>
+
+      <th>
+        New Word |
+      </th>
+    </tr>
+    <%= @word.each do |word| %>
+    <tr>
+      <td><%= link_to 'Show', word_path(word) %></td>
+      <td><%= word.category %></td>
+      <td><%= word.word %></td>
+    </tr>
+    <% end %>
+  </table>
+
+  <%= link_to 'Home', welcome_index_path %>
+</main>
